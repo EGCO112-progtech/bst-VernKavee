@@ -120,8 +120,8 @@ void tree( TreeNodePtr treePtr, int depht )
    if( treePtr != NULL ){
       tree(treePtr->rightPtr, depht+1);
       
-      for(int i = 0; i < depht; i++) printf("    ");
-      printf("%3d\n", treePtr->data);
+      for(int i = 0; i < depht; i++) printf("   ");
+      printf("%-2d\n", treePtr->data);
 
       tree(treePtr->leftPtr, depht+1);
 
